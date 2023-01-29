@@ -42,7 +42,7 @@ class _BotCommands:
         self.AddSudoCommand = f'addsudo{CMD_INDEX}'
         self.RmSudoCommand = f'rmsudo{CMD_INDEX}'
         self.PingCommand = f'ping{CMD_INDEX}'
-        self.RestartCommand = f'restart{CMD_INDEX}'
+        self.RestartCommand = getCommand('RESTART_CMD', f'restart{CMD_INDEX}')
         self.StatsCommand = f'stats{CMD_INDEX}'
         self.HelpCommand = f'help{CMD_INDEX}'
         self.LogCommand = f'log{CMD_INDEX}'
@@ -50,8 +50,8 @@ class _BotCommands:
         self.EvalCommand = f'eval{CMD_INDEX}'
         self.ExecCommand = f'exec{CMD_INDEX}'
         self.ClearLocalsCommand = f'clearlocals{CMD_INDEX}'
-        self.LeechSetCommand = f'leechset{CMD_INDEX}'
-        self.SetThumbCommand = f'setthumb{CMD_INDEX}'
+        self.LeechSetCommand = getCommand('LEECHSET_CMD', f'leechset{CMD_INDEX}')
+        self.SetThumbCommand = getCommand('SETTHUMB_CMD', f'setthumb{CMD_INDEX}')
         self.BtSelectCommand = f'btsel{CMD_INDEX}'
         self.RssListCommand = getCommand('RSSLIST_CMD', f'rsslist{CMD_INDEX}')
         self.RssGetCommand = getCommand('RSSGET_CMD', f'rssget{CMD_INDEX}')
